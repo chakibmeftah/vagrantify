@@ -37,6 +37,7 @@ Rechercher une VM à déployer
 Configuration avant déploiement
 	-   RAM
 	-   CPU
+
 <img src="https://user-images.githubusercontent.com/83987931/189535095-55d368cb-cd89-4436-9aab-64924ec1ff07.png" width="300" height="250">
 
 	
@@ -44,10 +45,12 @@ Configuration avant déploiement
 Provisionnement par commandes ou depuis un fichier :
 	-   Linux / unix : (.sh)
 	-   Windows (Powershell) : (.ps1)
+
 <img src="https://user-images.githubusercontent.com/83987931/189535092-3c2b64f2-6ae4-42f4-a995-d3651feb003e.png" width="300" height="250">
 
 
 ### Tâche 4 - Déploiement
 Lancer le déploiement
+
 <img src="https://user-images.githubusercontent.com/83987931/189535093-8d83287c-011e-4855-b506-2cdc64944f18.png" width="300" height="250">
 
