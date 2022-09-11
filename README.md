@@ -30,6 +30,7 @@ L'objectif principal du projet vagrantify est de vous permettre de gagner du tem
 
 ### Tâche 1 - Recherche
 Rechercher une VM à déployer
+
 <img src="https://user-images.githubusercontent.com/83987931/189535094-ec94d1a0-1c2f-44a5-8074-450068ea46d1.png" width="300" height="250">
 
 
