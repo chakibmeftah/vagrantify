@@ -27,9 +27,17 @@ Vagrantify can be useful in the following cases :
   ## Goal of the project
 The main goal of the vagrantify project is to save time when deploying and configuring VMs, below are the use cases.
 
+
+### Tâche 1 - Recherche
 <img src="https://user-images.githubusercontent.com/83987931/189533707-b21a12ac-a85d-4205-aebf-e91d245ff13f.png" width="300" height="250">
+
+### Tâche 2 - Configuration
 <img src="https://user-images.githubusercontent.com/83987931/189533701-1085f78d-24e2-45b7-b347-7009796263cc.png" width="300" height="250">
+
+### Tâche 3 - Provisionnement
 <img src="https://user-images.githubusercontent.com/83987931/189533705-5aaeba16-7a4d-450d-90c2-6ac2e7869a72.png" width="300" height="250">
+
+### Tâche 4 - Déploiement
 <img src="https://user-images.githubusercontent.com/83987931/189533707-b21a12ac-a85d-4205-aebf-e91d245ff13f.png" width="300" height="250">
 
 
