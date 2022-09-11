@@ -1,44 +1,44 @@
-# Vagrantify
+### Qu'est ce que Vagrantify ?
 
-### What is Vagrantify ?
-This program does not replace the vagrant product and is only a simple interface to simplify the deployment of virtual machines under HyperV, VirtualBox, Vmware Esxi.
+Ce programme ne remplace pas le produit [vagrant](https://www.vagrantup.com/) et n'est qu'une simple interface permettant de simplifier le déploiement de machines virtuelles sous HyperV, VirtualBox, Vmware Esxi.
 
+### Pourquoi utiliser vagrantify, et en quoi pourrait-il être utile ?
 
-### Why use vagrantify, and how could it be useful ?
+Vagrantify peut être utile dans les cas suivants :
 
-Vagrantify can be useful in the following cases :
-
-1.  Deploy one or more boxes on:
+1.  Déployer une ou plusieurs boxes en quelques clics sur :
 	-   HyperV
 	-   VirtualBox
-	-   vmware esxi
-  
-3.  Import VMs as a file (box)
+	-   Vmware Esxi
     
-4.  Export VMs as file (box)
+
+3.  Importer des VMs en tant que fichier (box).
     
-5.  Manage the boxes
-	-   Deploy
-	-   Delete
+4.  Exporter des VMs en tant que fichier (box).
+    
+5.  Gérer les boxes
+	-   Déployer
+	-   Supprimer
+    
 
-7.  Manage nodes
-	-   Start, Stop, pause, resume, delete nodes.
-  
-  ## Goal of the project
-The main goal of the vagrantify project is to save time when deploying and configuring VMs, below are the use cases.
+7.  Gérer les noeuds
+	-   Démarrer, Arrêter , mettre en pause, reprendre, détruire les noeuds.
+	
+	
+## Objectif du projet
+L'objectif principal du projet vagrantify est de vous permettre de gagner du temps lors du déploiement et de la configuration des VMs.
 
+### Tâche 1 - Recherche
+Rechercher une VM à déployer
 
-### Task 1 - Search
-<img src="https://user-images.githubusercontent.com/83987931/189533707-b21a12ac-a85d-4205-aebf-e91d245ff13f.png" width="300" height="250">
+### Tâche 2 - Configuration
+Configuration avant déploiement
+	-   RAM
+	-   CPU
+### Tâche 3 - Provisionnement
+Provisionnement par commandes ou depuis un fichier :
+	-   Linux / unix : (.sh)
+	-   Windows (Powershell) : (.ps1)
 
-### Task 2 - Configuration
-<img src="https://user-images.githubusercontent.com/83987931/189533701-1085f78d-24e2-45b7-b347-7009796263cc.png" width="300" height="250">
-
-### Task 3 - Provisionning
-<img src="https://user-images.githubusercontent.com/83987931/189533705-5aaeba16-7a4d-450d-90c2-6ac2e7869a72.png" width="300" height="250">
-
-### Task 4 - Deployment
-<img src="https://user-images.githubusercontent.com/83987931/189533706-03b5db50-6bc3-41ac-b32c-1c653aa51e39.png" width="300" height="250">
-
-
-
+### Tâche 4 - Déploiement
+Lancer le déploiement
