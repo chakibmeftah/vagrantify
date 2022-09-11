@@ -36,16 +36,16 @@ Rechercher une VM à déployer
 
 ### Tâche 2 - Configuration
 Configuration avant déploiement
-	-   RAM
-	-   CPU
+-   RAM
+-   CPU
 
 <img src="https://user-images.githubusercontent.com/83987931/189535095-55d368cb-cd89-4436-9aab-64924ec1ff07.png" width="300" height="250">
 
 	
 ### Tâche 3 - Provisionnement
 Provisionnement par commandes ou depuis un fichier :
-	-   Linux / unix : (.sh)
-	-   Windows (Powershell) : (.ps1)
+-   Linux / unix : (.sh)
+-   Windows (Powershell) : (.ps1)
 
 <img src="https://user-images.githubusercontent.com/83987931/189535092-3c2b64f2-6ae4-42f4-a995-d3651feb003e.png" width="300" height="250">
 
