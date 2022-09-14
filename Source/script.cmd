@@ -1,1 +1,1 @@
-Powershell.exe -ExecutionPolicy Bypass .\script.ps1
+Powershell.exe -ExecutionPolicy Bypass .\vagrantify\script.ps1
