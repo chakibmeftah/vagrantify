@@ -413,7 +413,7 @@ def main():
             Lb.bind('<<ListboxSelect>>', toEntry)
         else:
             Selected_to_variable = Lb.get(ANCHOR)
-            Box_List.append(Selected_to_variable)  
+            Box_List.append(Selected_to_variable)
  
 
     # Ajouter la selection sans la remplacer, utile lorsqu'on souhaite rechercher différents types d'OS
@@ -888,6 +888,14 @@ def main():
                         f.close()
                     else:
                         subprocess.call(["C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\powershell.exe", "cd {}{}/{}".format(pathFolder,folderName,randomtxt), "; vagrant init -m {}".format(box)])
+                        f = open("{}{}/{}/Vagrantfile".format(pathFolder,folderName,randomtxt), "r")
+                        contents = f.readlines()
+                        f.close()
+                        contents.insert(5, '  config.vm.box_download_insecure=true\n')
+                        f = open("{}{}/{}/Vagrantfile".format(pathFolder,folderName,randomtxt), "w")
+                        contents = "".join(contents)
+                        f.write(contents)
+                        f.close()    
                     if txtNotSplitedRAM in Modified_Box_List.keys() or txtNotSplitedCPU in Modified_Box_List.keys():
                         if not "CPU" in Modified_Box_List.keys() :
                             Modified_Box_List[f'{GetSelectionElementInListbox_boxCPU}'] = {'CPU' : 1}
@@ -901,10 +909,11 @@ def main():
                                 contents.insert(6,  '    platform.guest_memsize = "{}" \n'.format(GetActualRamValue))
                                 contents.insert(7, f'    platform.guest_numvcpus = {GetActualCpuValue} \n')
                             else:
-                                contents.insert(5, f'  config.vm.provider "{GetPlatformType.get()}" do |platform| \n')
-                                contents.insert(6,  '    platform.memory = "{}" \n'.format(GetActualRamValue))
-                                contents.insert(7, f'    platform.cpus = {GetActualCpuValue} \n')
-                                contents.insert(8, '  end \n')
+                                contents.insert(5, '  config.vm.box_download_insecure=true\n\n')
+                                contents.insert(6, f'  config.vm.provider "{GetPlatformType.get()}" do |platform| \n')
+                                contents.insert(7,  '    platform.memory = "{}" \n'.format(GetActualRamValue))
+                                contents.insert(8, f'    platform.cpus = {GetActualCpuValue} \n')
+                                contents.insert(9, '  end \n')
 
                             f = open("{}{}/{}/Vagrantfile".format(pathFolder,folderName,randomtxt), "w")
                             contents = "".join(contents)
@@ -1796,7 +1805,7 @@ def main():
 
         aboutwindow_titleseperator_Window = Canvas_aboutwindow_info.create_text(85, 35, text="________", font=("Heveletica", 18, "bold"), fill="white")
 
-        aboutwindow_versionlabel_Window = Canvas_aboutwindow_info.create_text(98, 85, text="Version : 1.2.0", font=("Heveletica", 10, "bold"), fill="white")
+        aboutwindow_versionlabel_Window = Canvas_aboutwindow_info.create_text(98, 85, text="Version : 1.2.1", font=("Heveletica", 10, "bold"), fill="white")
 
 
 
